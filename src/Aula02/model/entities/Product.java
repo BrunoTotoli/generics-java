@@ -1,6 +1,6 @@
 package Aula02.model.entities;
 
-public class Product {
+public class Product implements Comparable<Product> {
 
     private String name;
     private Double price;
@@ -29,5 +29,10 @@ public class Product {
     @Override
     public String toString() {
         return this.name + ", " + String.format("%.2f", price);
+    }
+
+    @Override
+    public int compareTo(Product o) {
+        return price.compareTo(o.getPrice());
     }
 }
