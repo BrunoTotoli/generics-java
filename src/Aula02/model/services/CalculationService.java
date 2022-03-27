@@ -1,6 +1,5 @@
 package Aula02.model.services;
 
-import Aula02.model.entities.Product;
 
 import java.util.List;
 

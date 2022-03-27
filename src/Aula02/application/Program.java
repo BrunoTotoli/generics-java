@@ -4,7 +4,6 @@ import Aula02.model.entities.Product;
 import Aula02.model.services.CalculationService;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
