@@ -14,15 +14,20 @@ public class get_putTest {
         copy(myInts, myObj);
         copy(myDoubles, myObj);
 
-        System.out.println(myObj.toString());
+        printList(myObj);
     }
 
     private static void copy(List<? extends Number> copy, List<? super Number> paste) {
         for (Number n : copy) {
             paste.add(n);
         }
-
     }
 
+    private static void printList(List<? extends Object> list) {
+        for (Object o : list) {
+            System.out.print(o + " ");
+        }
+        System.out.println();
+    }
 
 }
